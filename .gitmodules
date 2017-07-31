@@ -9,4 +9,4 @@
 	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "plugins/history-sync"]
 	path = plugins/history-sync
-	url = https://github.com/wulfgarpro/history-sync
+	url = git@github.com:paranoidsp/history-sync.git

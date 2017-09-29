@@ -14,8 +14,11 @@ case $HIST_STAMPS in
   *) alias history='fc -l 1' ;;
 esac
 
-setopt append_history
+#setopt append_history
 setopt extended_history
+# Turning off inc_append_history when share_history is on
+#setopt inc_append_history
+setopt share_history
 #setopt hist_expire_dups_first
 #setopt hist_ignore_dups # ignore duplication command history list
 #setopt hist_ignore_all_dups # ignore duplication command history list
@@ -23,7 +26,6 @@ setopt extended_history
 #setopt hist_save_no_dups
 setopt hist_verify
 setopt hist_reduce_blanks
-setopt hist_verify
 
 # inc_append_history and share_history are mutually exclusive
 #setopt inc_append_history

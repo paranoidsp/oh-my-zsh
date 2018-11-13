@@ -22,14 +22,13 @@ function box_name {
 
 local ruby_env=''
 if which rvm-prompt &> /dev/null; then
-  ruby_env=' ‹$(rvm-prompt i v g)›%{$reset_color%}'
+  ruby_env='using%{$FG[243]%} ‹$(rvm-prompt i v g)›%{$reset_color%}'
 else
   if which rbenv &> /dev/null; then
-    ruby_env=' ‹$(rbenv version-name)›%{$reset_color%}'
+    ruby_env='using%{$FG[243]%} ‹$(rbenv version-name)›%{$reset_color%}'
   fi
 fi
 
-local current_dir='${PWD/#$HOME/~}'
 local git_info='$(git_prompt_info)'
 local prompt_char='$(prompt_char)'
 

@@ -54,7 +54,7 @@ function get_kubecfg {
 
 setopt PROMPT_SUBST
 
-PROMPT="╭─%{$FG[040]%}%n%{$reset_color%}%{$FG[239]%}@%{$reset_color%}%{$FG[033]%}$(box_name)%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$purple%}${current_dir}%{$reset_color%}${git_info} %{$FG[239]%}at%{$FG[243]%} %* %{$FG[239]%}[%{$FG[208]%}%!%{$reset_color%}%{$FG[239]%}]%{$reset_color%} $turquoise %? %{$terminfo[bold]$purple%}%(1j.%j.)%{$reset_color%}
+PROMPT="╭─%{$FG[040]%}%n%{$reset_color%}%{$FG[239]%}@%{$reset_color%}%{$FG[033]%}$(box_name)%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$purple%}${current_dir}%{$reset_color%}${git_info} %{$FG[239]%}at%{$FG[243]%} %* %{$FG[239]%}[%{$FG[208]%}%!%{$reset_color%}%{$FG[239]%}]%{$reset_color%} $turquoise %? %{$terminfo[bold]$purple%}%(1j.%j.)%{$reset_color%}$magenta|$purple"'$(get_kubecfg)'""%{$reset_color%}
 ╰─${prompt_char}%{$reset_color%} "
 # [%{$FG[033]%}%*%{$reset_color%}|
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FG[239]%}on%{$reset_color%} %{$fg[255]%}"
